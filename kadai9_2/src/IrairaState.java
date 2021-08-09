@@ -1,0 +1,28 @@
+
+class IrairaState extends DogState {
+	 private static IrairaState s = new IrairaState();
+	 private IrairaState() {}
+	 public static DogState getInstance() {
+	 return s;
+	 }
+	 public void tukareta(Dog moto) {
+	 // なにもしない
+	 }
+	 public void tabeta(Dog moto) {
+	 moto.changeState(TanoshiiState.getInstance());
+	 }
+	 public String toString() {
+	 return "いらいら状態";
+	 }
+	@Override
+	public void nitibotu(Dog moto) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+	@Override
+	public void hinode(Dog moto) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}
